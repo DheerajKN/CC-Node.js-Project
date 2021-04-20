@@ -1,12 +1,19 @@
 # CC-Node.js-Project
 
+OS: Windows
+Node Version: v12.18.3
+NPM Version: v7.10.0
+
+## Test if the Project is Running 
+After npm start, access http://localhost:5000 to see {status: Connected} message
+
 ## specification and documentation
 
 ## specification
 This Project has 7 endpoints:
 - Get All Members sorted by last_seen_at
 ```
-    URL: /api/members
+    URL: /cc/members
 
     Method:    GET
 
@@ -29,7 +36,7 @@ This Project has 7 endpoints:
 
 - Gets all the highscores for all levels for any user
 ```
-    URL: /api/members/highscores/user
+    URL: /cc/members/highscores/user
 
     Method:    GET
 
@@ -60,7 +67,7 @@ This Project has 7 endpoints:
 
 - Get all the highscores of a level
 ```
-    URL: /api/members/highscores/level/:level
+    URL: /cc/members/highscores/level/:level
 
     Method:    GET
 
@@ -91,7 +98,7 @@ This Project has 7 endpoints:
 
 - Login Single Member
 ```
-    URL: /api/members/login
+    URL: /cc/members/login
 
     Method:    POST
 
@@ -122,7 +129,7 @@ This Project has 7 endpoints:
 
 -  Create Member
 ```
-    URL: /api/members
+    URL: /cc/members
 
     Method:    POST
 
@@ -155,7 +162,7 @@ This Project has 7 endpoints:
 
 - Update Score of the user
 ```
-    URL: /api/members
+    URL: /cc/members
 
     Method:    PUT
 
@@ -191,7 +198,7 @@ This Project has 7 endpoints:
 
 - Update User Object with email field
 ```
-    URL: /api/members/email
+    URL: /cc/members/email
 
     Method:    PUT
 
