@@ -43,7 +43,7 @@ router.get('/', (req, res) => {
 });
 
 //Gets all the highscores for all levels for any user
-router.get('/highscores/user/:username', (req, res)=>{
+router.get('/highscores/user', (req, res)=>{
     //Find if the token is valid or not by checking if there is such object or not
     const found = members.filter(authTokenFilter(req));
     if (found.length > 0) {
@@ -135,7 +135,7 @@ router.post('/', (req, res) => {
     "last_seen_at": new Date()
   };
   members.push(newMember);
-  res.json(members);
+  res.json(newMember);
 });
 
 // Update Score of the user
